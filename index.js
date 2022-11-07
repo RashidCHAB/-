@@ -1,10 +1,8 @@
-import figlet from 'figlet'
+import catme from 'cat-me'
 
-figlet('Intocode', function(err, data) {
-    if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
+function cat() {
+    for (let i = 0; i < 3; i++) {
+        console.log(catme());  
     }
-    console.log(data)
-});
+}
+cat()
